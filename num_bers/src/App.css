@@ -1,0 +1,79 @@
+.game-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.number-buttons button {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white; /* White text */
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.number-buttons button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: scale(1.1); /* Button grows slightly when hovered */
+}
+
+.number-buttons button:disabled {
+  background-color: #ccc; /* Gray background for disabled buttons */
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 22px;
+  color: green;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.winning-sticker,
+.losing-sticker {
+  position: absolute;
+  font-size: 24px;
+  animation: floatSticker 3s infinite;
+}
+
+.winning-sticker {
+  color: gold;
+}
+
+.losing-sticker {
+  color: red;
+}
+
+@keyframes floatSticker {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
